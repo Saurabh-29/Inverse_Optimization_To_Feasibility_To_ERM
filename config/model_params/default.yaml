@@ -1,0 +1,6 @@
+name: 1layer
+input_dim: 6
+output_dim: 40
+softmax: 0
+abs: 0
+softplus: 0

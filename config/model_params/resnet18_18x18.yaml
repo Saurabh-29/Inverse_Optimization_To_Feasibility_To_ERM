@@ -1,0 +1,5 @@
+name: resnet18
+input_dim: 144
+output_dim: 2380
+softmax: 0
+softplus: 1

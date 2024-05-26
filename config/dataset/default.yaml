@@ -1,0 +1,6 @@
+poly_kernel: 0
+exp_kernel: 0
+poly_degree: 3
+poly_gamma: 1.0
+exp_gamma: 10.0
+gen_binv: 0

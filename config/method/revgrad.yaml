@@ -1,0 +1,8 @@
+name: revgrad
+sep_margin: 0
+qp: 1
+eps: 1.0
+KKT: 1
+surrogate: 0
+pos_tgt: 0
+hp_lamb: 0.0

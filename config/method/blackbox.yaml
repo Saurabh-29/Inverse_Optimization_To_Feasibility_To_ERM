@@ -1,0 +1,3 @@
+name: blackbox
+hp_lamb: 20
+max_cap_on_pred: 1

@@ -1,0 +1,12 @@
+dim_decision: 10
+dim_features: 5
+N_train: 100
+N_valid: 100
+N_test: 100
+degree: 2
+additive_noise: 0.0
+scale_noise_uni: 0.0
+scale_noise_div: 0.0
+attack_threshold: 0.5
+attack_power: 3.0
+name: knapsack

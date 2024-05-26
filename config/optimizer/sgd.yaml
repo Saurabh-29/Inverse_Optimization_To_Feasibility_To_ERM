@@ -1,0 +1,4 @@
+name: SGD
+lr: 1e-4
+k: 1
+lr_scheduler: 0

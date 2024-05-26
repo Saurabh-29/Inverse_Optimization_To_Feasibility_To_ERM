@@ -1,0 +1,7 @@
+name: adagrad
+lr: 1e-4
+k: 1
+lr_scheduler: 0
+scheduler_name: "step"
+scheduler_gamma: 0.1
+milestones: [30, 40]

@@ -1,0 +1,13 @@
+plot_optimizer: ["armijo"]
+lr: ["*"]
+plot_method: ["redcost", "revgrad", "identity", "naivesol"]
+exp_name: [""]
+k: [1]
+keys_plot: ["train_estimate_loss", "valid_estimate_loss"]
+plot_name: "provide_at_runtime"
+file_format: "log_data_{}_{}_{}_{}_{}_{}.npy"
+data_path: ["knapsack"]
+start: 0
+plot_type: 0
+file_names: ['']
+legends: ['']

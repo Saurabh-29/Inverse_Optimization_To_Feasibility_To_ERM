@@ -1,0 +1,18 @@
+defaults:
+  - _self_
+  - model_params: default
+  - optimizer: default
+  - train_params: default
+  - method: default
+  - dataset: default
+
+data_path: "../dataset/dataset_1_replaced.pkl"
+normalize_data: True
+debug: 0
+exp_name: ""
+wandb_mode: offline
+device: cpu
+trainer: general
+ckpt_path: None
+task: sp
+q_pred: 0

@@ -1,0 +1,4 @@
+name: combresnet
+input_dim: 96
+output_dim: 1012
+softmax: 0

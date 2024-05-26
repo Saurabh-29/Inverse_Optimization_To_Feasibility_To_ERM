@@ -1,0 +1,6 @@
+name: portfolio
+input_dim: 28
+output_dim: 1
+qp_output_dim: 50
+softmax: 0
+convex: 1

@@ -1,0 +1,6 @@
+name: cg
+lr: 1e-4
+k: 1
+m: 1
+lr_scheduler: 0
+eta: 1

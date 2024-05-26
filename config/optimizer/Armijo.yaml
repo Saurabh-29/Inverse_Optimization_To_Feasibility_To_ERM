@@ -1,0 +1,11 @@
+name: Armijo
+k: 1
+lr: 1.0
+c: 0.5
+b_bwd: 0.9
+b_fwd: 1.2
+total_steps: 10000
+beta: 1
+eta_schedule: constant
+m: 1
+lr_scheduler: 0

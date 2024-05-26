@@ -1,0 +1,6 @@
+name: resnet18_pm
+input_dim: 264
+output_dim: 264
+softmax: 0
+softplus: 1
+load_e2v: 1
