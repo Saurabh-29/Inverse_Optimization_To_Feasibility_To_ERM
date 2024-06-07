@@ -5,7 +5,6 @@ import numpy as np
 from scipy.optimize import linprog
 import sys
 sys.path.append("../")
-import Algorithm.LinearProgramMethod as lpm
 from functorch import make_functional, grad
 
 from utils import get_squared_grad_norm, get_loss_with_LP_variables, get_test_loss, get_sol_from_LP_variables
@@ -40,7 +39,7 @@ class SPOplus():
         self.lp_solver = Solver(lp_params)
 
 
-        self.solver = ShortestPath.apply
+        self.solver = LP.apply
         self.optimizer_name, self.optimizer = return_optimizer_from_string(config["optimizer"], self.model)
 
         self.train_data, self.valid_data, self.test_data = kernelize_data(config, self.train_data, self.valid_data, self.test_data)
@@ -145,7 +144,7 @@ class SPOplus():
             return lr
 
 
-class ShortestPath(torch.autograd.Function):
+class LP(torch.autograd.Function):
     """ Define a new function for shortest path to avoid the legacy autograd
     error """
 

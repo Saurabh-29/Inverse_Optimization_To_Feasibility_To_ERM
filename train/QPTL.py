@@ -5,7 +5,7 @@ import numpy as np
 from scipy.optimize import linprog
 import sys
 sys.path.append("../")
-import Algorithm.LinearProgramMethod as lpm
+# import Algorithm.LinearProgramMethod as lpm
 from functorch import make_functional, grad
 
 from utils import get_squared_grad_norm, get_loss_with_LP_variables, get_test_loss, get_sol_from_LP_variables
@@ -15,9 +15,9 @@ from utils import *
 import time
 from Solver import Solver
 
-class OptNet():
+class QPTL():
     def __init__(self, config):
-        super(OptNet, self).__init__()
+        super(QPTL, self).__init__()
         self.model_params = config["model_params"]
         # self.model = LinearModel(config["model_params"])
         self.model = get_model(config["model_params"])

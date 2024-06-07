@@ -1,6 +1,0 @@
-name: naivesol
-multiplier: 0
-l_ub: 0
-loss_clip: 0
-qp: 0
-KKT: 1

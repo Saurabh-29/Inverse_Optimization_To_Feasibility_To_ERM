@@ -5,15 +5,14 @@ import numpy as np
 from scipy.optimize import linprog
 import sys
 sys.path.append("../")
-import Algorithm.LinearProgramMethod as lpm
 from functorch import make_functional, grad
 
-from reducedcostgrad import ReducedCostGradient
+from MOM import MOM
 from revgrad import RevGrad
 # from naive_sol import NaiveSol
-from blackbox import Blackbox
-from identity import Identity
-from optnet import OptNet
+from BB import BB
+from ST import ST
+from QPTL import QPTL
 import hydra
 import wandb
 from utils import *
@@ -26,13 +25,13 @@ from Solver import Solver
 
 from torch.optim.lr_scheduler import ReduceLROnPlateau, ExponentialLR, MultiStepLR
 
-method_name = {  "redcost": ReducedCostGradient, 
+method_name = {  "mom": MOM, 
             "revgrad": RevGrad,
             # "naivesol": NaiveSol, 
-            "blackbox": Blackbox, 
-            "identity": Identity,
-            "optnet": OptNet,
-            "SPOplus": SPOplus,
+            "bb": BB, 
+            "st": ST,
+            "qptl": QPTL,
+            "spoplus": SPOplus,
             }
 
 def get_eta(c_target, c_pred, eta_max=2.0):

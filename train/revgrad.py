@@ -5,7 +5,7 @@ import numpy as np
 from scipy.optimize import linprog
 import sys
 sys.path.append("../")
-import Algorithm.LinearProgramMethod as lpm
+# import Algorithm.LinearProgramMethod as lpm
 from functorch import make_functional, grad, make_functional_with_buffers
 
 from utils import get_squared_grad_norm, get_loss_with_LP_variables, get_test_loss
@@ -14,7 +14,7 @@ from models import get_model
 from utils import *
 import cvxpy as cp
 import time
-import Algorithm.LearningMethod as lm
+# import Algorithm.LearningMethod as lm
 from fractions import Fraction
 from cvxpy import OSQP
 from Solver import Solver

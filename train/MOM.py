@@ -5,7 +5,7 @@ import numpy as np
 from scipy.optimize import linprog
 import sys
 sys.path.append("../")
-import Algorithm.LinearProgramMethod as lpm
+# import Algorithm.LinearProgramMethod as lpm
 from functorch import make_functional, grad
 
 from utils import get_squared_grad_norm, get_loss_with_LP_variables, get_test_loss
@@ -16,9 +16,9 @@ import time
 from Solver import Solver
 
 
-class ReducedCostGradient():
+class MOM():
     def __init__(self, config):
-        super(ReducedCostGradient, self).__init__()
+        super(MOM, self).__init__()
         self.model_params = config["model_params"]
         self.device = torch.device('cuda' if (torch.cuda.is_available() and  config["device"]=="cuda")  else 'cpu')
         # self.device = torch.device('cpu')
