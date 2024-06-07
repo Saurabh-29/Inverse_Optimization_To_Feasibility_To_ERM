@@ -1,5 +1,3 @@
 defaults:
   - _self_
   - dataGen: default
-
-name: sp

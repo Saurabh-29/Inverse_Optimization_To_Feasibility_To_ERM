@@ -1,3 +1,4 @@
+name: sp
 dim_edge_vert: 4
 dim_edge_hori: 4
 dim_features: 6
@@ -10,4 +11,3 @@ scale_noise_uni: 0.0
 scale_noise_div: 0.0
 attack_threshold: 0.0
 attack_power: 0.0
-name: temp_data
