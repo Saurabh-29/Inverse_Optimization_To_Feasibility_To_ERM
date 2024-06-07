@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+train/outputs/*
+train/wandb/*
+*.npy
+*.txt
 
 # C extensions
 *.so

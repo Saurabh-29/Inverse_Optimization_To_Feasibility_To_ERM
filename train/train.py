@@ -5,6 +5,7 @@ import numpy as np
 from scipy.optimize import linprog
 import sys
 sys.path.append("../")
+sys.path.append("./methods/")
 from functorch import make_functional, grad
 
 from MOM import MOM

@@ -186,7 +186,7 @@ def test_my_idea():
     sol = loaded_dict["train"]["sol"][index]
     # print(A.shape, b.shape, c.shape)
 
-    x = linprog(c_real, A_eq=A, b_eq=b, bounds=(0, None))
+    x = linprog(c_real, A_eq=A, b_eq=b, bginds=(0, None))
     # print(np.rint(x.x))
     print(np.rint(sol))
     # print((np.rint(x.x) == np.rint(sol)).all())

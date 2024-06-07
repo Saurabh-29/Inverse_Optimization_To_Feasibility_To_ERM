@@ -7,7 +7,6 @@ To run this code, there are three main steps.
 Install the conda environment from the environment.yaml file.
 ```
 conda env create --file=environment.yaml
-
 ```
 
 ## Data-generation
