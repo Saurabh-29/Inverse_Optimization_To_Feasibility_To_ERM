@@ -31,7 +31,8 @@ After downloading the dataset, run the corresponding generator file to generate 
 To run the code for our method for a dataset with adagrad optimizer and lr=1.0
 
 ```
+cd train
 python train.py data_path=<path to data>  optimizer=adagrad optimizer.lr=1.0 method=revgrad
 ```
 
-To run other method, replace revgrad with other method.
+To run other method, replace revgrad with other method. When running perfect matching, use normalize_data=False
