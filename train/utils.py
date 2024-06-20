@@ -231,7 +231,7 @@ def get_dual_sol_from_LP_variables(solver, c):
     
     returns: solution and dual variables
 
-    Mainly used for the Optnet method.
+    Mainly used for the QPTL method.
     """
     sol_pred = np.zeros_like(c)
     dual_pred = np.zeros_like(c)

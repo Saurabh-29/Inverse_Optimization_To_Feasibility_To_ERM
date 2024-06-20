@@ -154,7 +154,7 @@ def trainer(cfg, method):
                     c_fixed = c_pred.clone().detach() 
                     method.set_attr_c_fixed(c_fixed)  
             
-            if cfg.method.name == "redcost":
+            if cfg.method.name == "MOM":
                 if cfg.method.x_basis:
                     pass
                 else:
@@ -174,7 +174,7 @@ def trainer(cfg, method):
                 if cfg.method.name == "SPOplus":
                     c_gt = method.train_data["c"][index]
                     loss = loss_fn(c_pred, c_gt, target)
-                elif cfg.method.name == "redcost":
+                elif cfg.method.name == "MOM":
                     if cfg.method.x_basis:
                         loss = loss_fn(c_pred, target)
                     else:
